@@ -26,6 +26,17 @@ p {
   text-align: center;
 }
 
+#section-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section-index p {
+  max-width: 600px;
+  text-align: center;
+}
+
 a {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: inherit;
@@ -220,6 +231,7 @@ td {
     flex-direction: column;
     align-items: center;
   }
+}
 
   /* Imagenes index */
   .container-images {
@@ -240,7 +252,7 @@ td {
   table {
     font-size: 14px;
   }
-}
+
 
 /* Diseño responsive */
 @media (max-width: 768px) {
@@ -251,7 +263,6 @@ td {
     line-height: 1.5;
   }
 
-  /* Navbar vertical en móvil */
   .navbar ul {
     flex-direction: column;
     gap: 0.5rem;
@@ -276,18 +287,20 @@ td {
   }
 }
 
-
 /* Diseño responsive para Contacto */
 @media (max-width: 768px) {
-  section p,
-  section ul {
+  section p {
     margin-left: 10px;
     margin-right: 10px;
     width: auto;
   }
 
   section ul {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
     padding-left: 20px; 
+    text-align: center;
   }
 
   section li {
@@ -295,433 +308,5 @@ td {
     font-size: 16px;
     color: black;
     margin-bottom: 8px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*MI CSS !!!!!!!!!!!!!!!!!!!!! */
-
-/* Estilo para el elemento h1 */
-h1 {
-    color: rgb(105, 74, 44);
-    font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 0dvb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Estilo para el elemento h2 */
-h2 {
-    color: rgb(161, 90, 24);
-    font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-/* Estilo para el elemento p */
-p {
-    color: black; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    font-size: 16px;
-    margin: 1px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 80%;
-    margin-left: 10px;
-}
-
-/* Estilo para el elemento footer */
-footer {
-    color: black; 
-    font-size: 16px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 20px;
-}
-
-/* Estilo para enlaces */
-a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 10px;
-}
-
-/* Estilo para imagenes galería */
-#contenedor-cajas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20rem;
-    padding: 2rem;
-    justify-items: start;
-}
-
-.imagen-galeria {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 1px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-    justify-content: space-around;
-    ;
-}
-
-.img {
-    width: 100%; 
-    height: auto;
-    display: block;
-    border-radius: 1px;
-    box-shadow: 0 2px 8px rgb(105, 74, 44);
-}
-
-
-/*Estilo para navgar y titulos galeria*/
-.navbar ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
-  gap: 1rem;
-}
-
-.navbar ul li {
-  margin: 0;
-}
-
-.navbar ul a {
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-.titulos, .navbar, h1 {
-  text-align: center;
-}
-
-/* Estilo para imagenes index */
-.container-images {
-    display: flex;
-    flex-direction:row;
-    width:100%;
-    max-width: 800px;
-    height: auto; 
-    justify-content:center;
-    align-items:center;
-}
-
-.img-index {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
-    box-sizing: border-box
-}
-
-/* Estilo para nav */
-nav {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/* Estilo para elemento ul */
-ul {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/* Estilo para el elemento tabla */
-table {
-    border-color: black;
-    border-radius: 20%; 
-    border-collapse: collapse;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-th{border: 1px solid black;padding: 8px;text-align: center;background-color:rgb(199, 172, 145);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-td{border: 1px solid black;padding: 8px;text-align: center;background-color:rgb(216, 205, 194);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-
-/* Estilo para titulo index */
-#titulo-index {
-    background-color: darkkhaki;
-    border: 5px solid rgb(105, 74, 44);
-    width: 97%;
-    height: 80px;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    margin-inline-end: auto;
-    margin-inline-start: auto;
-}
-
-/*Estilo para titulos pages */
-.titulos {
-    background-color: darkkhaki;
-    width: 97%;
-    height: 80px;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    margin-inline-end: auto;
-    margin-inline-start: auto;
-}
-/* Estilo para imagenes galería */
-#contenedor-cajas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20rem;
-    padding: 2rem;
-    justify-items: start;
-}
-
-.imagen-galeria {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 1px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-    justify-content: space-around;
-    ;
-}
-
-.img {
-    width: 100%; 
-    height: auto;
-    display: block;
-    border-radius: 1px;
-    box-shadow: 0 2px 8px rgb(105, 74, 44);
-}
-
-
-/*Estilo para navgar y titulos galeria*/
-.navbar ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
-  gap: 1rem;
-}
-
-.navbar ul li {
-  margin: 0;
-}
-
-.navbar ul a {
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-.titulos, .navbar, h1 {
-  text-align: center;
-}
-
-/* Estilo para imagenes galería */
-#contenedor-cajas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20rem;
-    padding: 2rem;
-    justify-items: start;
-}
-
-.imagen-galeria {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 1px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-    justify-content: space-around;
-    ;
-}
-
-.img {
-    width: 100%; 
-    height: auto;
-    display: block;
-    border-radius: 1px;
-    box-shadow: 0 2px 8px rgb(105, 74, 44);
-}
-
-/*Estilo para navbar y titulos galeria*/
-.navbar ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
-  gap: 1rem;
-}
-
-.navbar ul li {
-  margin: 0;
-}
-
-.navbar ul a {
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-.titulos, .navbar, h1 {
-  text-align: center;
-}
-
-/* Estilo para Tabla tarifas */
-.tarifas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.tarjeta {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 1rem;
-  background-color: rgb(218, 213, 152);
-  text-align: center;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
-}
-
-.tarjeta:hover {
-  transform: scale(1.02);
-}
-
-.tarjeta h4 {
-  margin-top: 0;
-  color: black;
-}
-
-.nota {
-  text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: black;
-}
-
-#subtitulo-tarifas {
-    text-align: center;
-}
-
-/* Estilo para botones nav */
-.navbar ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: row; 
-    background-color: rgb(204, 198, 118);
-    margin: 5px;
-    padding: 4px;
-    list-style: none;
-}
-
-/* Diseño responsive*/
-@media (max-width: 768px) {
-  #contenedor-cajas {
-    grid-template-columns: 1fr; /* Una sola columna en móviles */
-    padding: 1rem;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .navbar ul li {
-    text-align: center;
-  }
-
-  .imagen-galeria img {
-    max-width: 90%;
-  }
-}
-
-/* Estilos para img galeria */
-#contenedor-cajas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-.imagen-galeria {
-  display: flex;
-  justify-content: center;
-}
-
-.imagen-galeria img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo de navbar y encabezado */
-.navbar ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.navbar ul li {
-  margin: 0;
-}
-
-.navbar a {
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-/* titulos */
-.titulos, h1, h2, h3 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-/* diseño responsive */
-@media (max-width: 768px) {
-  #contenedor-cajas {
-    grid-template-columns: 1fr; /* 1 imagen por fila */
-    padding: 1rem;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .imagen-galeria img {
-    max-width: 90%;
-  }
+  } 
 }
