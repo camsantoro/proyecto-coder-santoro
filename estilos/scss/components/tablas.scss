@@ -1,0 +1,34 @@
+@use '../utils' as *;
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 90%;
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    font-family: $font-base;
+  }
+
+  th {
+    background-color: $color-tabla-th;
+  }
+
+  td {
+    background-color: $color-tabla-td;
+  }
+}
+
+#subtitulo-tarifas {
+  text-align: center;
+  font-style: italic;
+  color: $color-principal;
+}
+
+.nota {
+  text-align: center;
+  font-family: $font-base;
+  color: black;
+}

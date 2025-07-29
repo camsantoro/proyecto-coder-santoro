@@ -1,0 +1,67 @@
+@use '../utils' as *;
+
+#contenedor-cajas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.imagen-galeria {
+  @extend %flex-center;
+
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    @extend %box-shadow-light;
+    @extend %transition-transform;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.container-images {
+  @extend %image-style;
+  max-width: 400px;
+  box-shadow: 0 2px 8px $color-principal;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(105, 74, 44, 0.3);
+  }
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 2rem auto;
+  gap: 1.5rem;
+
+  .img-index {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    @extend %box-shadow-principal;
+    @extend %transition-transform;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.img-index {
+  @extend %image-style;
+  max-width: 90%;
+  box-shadow: 0 2px 8px $color-principal;
+  @include scale-hover;
+}

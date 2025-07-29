@@ -1,0 +1,20 @@
+@use '../utils' as *;
+
+.navbar ul,
+.navbar-contactos ul {
+  @extend %flex-center;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: $color-navbar;
+  margin: 5px auto;
+  padding: 10px;
+  gap: 1rem;
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    padding: 0.5rem;
+  }
+}

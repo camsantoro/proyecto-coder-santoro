@@ -1,0 +1,263 @@
+h2, h3, h4 {
+  color: rgb(105, 74, 44);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.imagen-galeria, .navbar ul,
+.navbar-contactos ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-galeria img, .tarjeta {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-images .img-index {
+  box-shadow: 0 2px 8px rgb(105, 74, 44);
+}
+
+#section-index p, footer {
+  text-align: center;
+}
+
+.imagen-galeria img, .container-images .img-index {
+  transition: transform 0.2s ease;
+}
+
+.container-images, .img-index {
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.container-images:hover, .img-index:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(105, 74, 44, 0.3);
+}
+
+#section-index p {
+  max-width: 600px;
+}
+
+#titulo-index {
+  background-color: darkkhaki;
+  font-size: 2rem;
+  border: 5px solid rgb(105, 74, 44);
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#titulo-index h1 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  word-break: break-word;
+}
+
+.titulos {
+  background-color: darkkhaki;
+  width: 97%;
+  max-width: 100vw;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  flex-wrap: wrap;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(105, 74, 44);
+  font-size: 2rem;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  max-width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h2, h3, h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+p {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  margin: 10px auto;
+  width: 80%;
+  text-align: center;
+}
+
+footer {
+  color: black;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 20px;
+}
+
+a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar ul,
+.navbar-contactos ul {
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: rgb(204, 198, 118);
+  margin: 5px auto;
+  padding: 10px;
+  gap: 1rem;
+}
+.navbar ul li,
+.navbar-contactos ul li {
+  margin: 0;
+}
+.navbar ul a,
+.navbar-contactos ul a {
+  padding: 0.5rem;
+}
+
+.tarifas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem;
+}
+
+.tarjeta {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: rgb(218, 213, 152);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.tarjeta:hover {
+  transform: scale(1.02);
+}
+.tarjeta h4 {
+  margin-top: 0;
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 90%;
+}
+table th, table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+table th {
+  background-color: rgb(199, 172, 145);
+}
+table td {
+  background-color: rgb(216, 205, 194);
+}
+
+#subtitulo-tarifas {
+  text-align: center;
+  font-style: italic;
+  color: rgb(105, 74, 44);
+}
+
+.nota {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+
+.boton-pulse:hover {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#contenedor-cajas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.imagen-galeria img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.imagen-galeria img:hover {
+  transform: scale(1.05);
+}
+
+.container-images {
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgb(105, 74, 44);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 2rem auto;
+  gap: 1.5rem;
+}
+.container-images:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(105, 74, 44, 0.3);
+}
+.container-images .img-index {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.container-images .img-index:hover {
+  transform: scale(1.05);
+}
+
+.img-index {
+  max-width: 90%;
+  box-shadow: 0 2px 8px rgb(105, 74, 44);
+  transition: transform 0.3s ease;
+}
+.img-index:hover {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=estilos.css.map */

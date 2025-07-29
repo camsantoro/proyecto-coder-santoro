@@ -1,0 +1,10 @@
+@mixin smooth-transition($properties: all, $duration: 0.4s, $timing: ease-in-out) {
+  transition: $properties $duration $timing;
+}
+
+@mixin scale-hover($scale: 1.05, $duration: 0.3s) {
+  transition: transform $duration ease;
+  &:hover {
+    transform: scale($scale);
+  }
+}
